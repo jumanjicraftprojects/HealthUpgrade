@@ -1,0 +1,32 @@
+default-health: 5
+default-health-limit: 20
+health-limit-perms:
+  rank1: 30
+  rank2: 40
+  rank3: 50
+menu:
+  title: '&2Max Health Upgrade'
+  item-name: '&b+{HEALTH} Max Health'
+  item-lore:
+    - '&2Cost: &a{COST}'
+  slots:
+    '11':
+      health: 1
+      cost: 1000
+    '12':
+      health: 2
+      cost: 2000
+    '13':
+      health: 3
+      cost: 3000
+    '14':
+      health: 4
+      cost: 4000
+    '15':
+      health: 5
+      cost: 5000
+consumable:
+  heal-on-consume: true
+  item-name: '&b+{HEALTH} Max Health'
+  item-lore:
+    - '&aConsume to use'

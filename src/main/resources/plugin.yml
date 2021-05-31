@@ -1,0 +1,45 @@
+name: HealthUpgrade
+version: '1.0'
+api-version: '1.13'
+author: Donut
+main: us.donut.healthupgrade.HealthUpgradePlugin
+depend: [Vault]
+commands:
+  reloadhealthupgrade:
+    description: Reloads HealthUpgrade
+    permission: healthupgrade.reload
+  upgradehealth:
+    description: Opens HealthUpgrade menu
+    permission: healthupgrade.menu
+  health:
+    description: Displays max health of player
+    permission: healthupgrade.health
+    usage: /health <player>
+  sethealth:
+    description: Sets max health of player
+    permission: healthupgrade.sethealth
+    usage: /sethealth <player> <number>
+  resethealth:
+    description: Resets max health of player
+    permission: healthupgrade.resethealth
+    usage: /resethealth <player>
+  resetallhealth:
+    description: Resets max health of all players
+    permission: healthupgrade.resetallhealth
+    usage: /resetallhealth
+permissions:
+  healthupgrade.reload:
+    description: Allows /reloadhealthupgrade
+  healthupgrade.menu:
+    description: Allows /upgradehealth
+  healthupgrade.health:
+    description: Allows /health
+  healthupgrade.sethealth:
+    description: Allows /sethealth
+  healthupgrade.resethealth:
+    description: Allows /resethealth
+  healthupgrade.resetallhealth:
+    description: Allows /resetallhealth
+  healthupgrade.limit.bypass:
+    description: Bypass health limit
+    default: false
